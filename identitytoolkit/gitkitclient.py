@@ -451,7 +451,6 @@ class GitkitClient(object):
     return {
         'email': param['email'],
         'userIp': user_ip,
-        'captchaResp': param['response'],
         'requestType': 'PASSWORD_RESET'}
 
   def _ChangeEmailRequest(self, param, user_ip, id_token):
